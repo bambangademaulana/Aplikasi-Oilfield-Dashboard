@@ -1,0 +1,13 @@
+{
+  "name": "Oilfield-Dasboard",
+  "version": "1.0.0",
+  "description": "Apikasi untuk menentukan grafik hasil produksi minyak.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.2.0",
+    "electron-packager": "^17.1.2"
+  }
+}

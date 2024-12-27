@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oilfield Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Oilfield Dashboard</h1>
+
+        <!-- Input Form -->
+        <div class="form-container">
+            <h2>Input Data Produksi</h2>
+            <form id="productionForm">
+                <label for="wellName">Nama Sumur:</label>
+                <input type="text" id="wellName" required>
+                
+                <label for="production">Produksi (bbl):</label>
+                <input type="number" id="production" required>
+                
+                <button type="submit">Tambah Data</button>
+            </form>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-container">
+            <h2>Data Produksi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Sumur</th>
+                        <th>Produksi (bbl)</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable"></tbody>
+            </table>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-container">
+            <h2>Grafik Produksi</h2>
+            <canvas id="productionChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
